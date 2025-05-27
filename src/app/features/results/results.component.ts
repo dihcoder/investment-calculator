@@ -1,4 +1,4 @@
-import { Component, inject, Input, input, Signal } from '@angular/core';
+import { Component, computed, inject, Input, input, Signal } from '@angular/core';
 import { CurrencyPipe } from '@angular/common';
 import type { TableRow } from './table-row.model';
 import { InvestmentCalculatorService } from '../../core/services/investment-calculator.service';
@@ -18,7 +18,9 @@ export class ResultsComponent {
 
   private investmentService = inject(InvestmentCalculatorService);
 
-  get results() {
-    return this.investmentService.resultData();
-  }
+  // read-only signal (prevents rewriting service data)
+  // results = computed(() => this.investmentService.resultData());
+
+  // 'asReadonly' method provided by Angular
+  results = this.investmentService.resultData.asReadonly()
 }

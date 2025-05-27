@@ -2,15 +2,12 @@
 
 A responsive and beginner-friendly investment calculator built with **Angular 19**, **TypeScript**, and **CSS**. This project allows users to simulate the growth of their investments over time based on user input values such as initial investment, annual contribution, expected return rate, and duration.
 
-<!-- 
-> 🌐 Live demo available at: [https://dihcoder.github.io/investment-calculator/](https://dihcoder.github.io/investment-calculator/)
+
+> 🌐 Live demo available at: [https://invests-calculator.netlify.app/](https://invests-calculator.netlify.app/)
 
 <br/>
 
-![Investment Calculator Preview](./investment-calculator.png)
- -->
-
-![Project Banner](public/investment-calculator-logo.png)
+![Investment Calculator Preview](investment-calculator-preview.png)
 
 ---
 
