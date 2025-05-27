@@ -1,4 +1,4 @@
 <app-header />
-<app-user-input />
-<app-results />
+<app-user-input (submitUserData)="calculateInvestment($event)" />
+<app-results [results]="calculationResults()" />
 <router-outlet />

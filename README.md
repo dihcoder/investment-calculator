@@ -1,59 +1,149 @@
-# InvestmentCalculator
+# 📈 Investment Calculator
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
+A responsive and beginner-friendly investment calculator built with **Angular 19**, **TypeScript**, and **CSS**. This project allows users to simulate the growth of their investments over time based on user input values such as initial investment, annual contribution, expected return rate, and duration.
 
-## Development server
+<!-- 
+> 🌐 Live demo available at: [https://dihcoder.github.io/investment-calculator/](https://dihcoder.github.io/investment-calculator/)
 
-To start a local development server, run:
+<br/>
+
+![Investment Calculator Preview](./investment-calculator.png)
+ -->
+
+![Project Banner](public/investment-calculator-logo.png)
+
+---
+
+## 🚀 Features
+
+- 📊 Dynamic investment projections based on real formulas
+- ✍️ User-friendly form inputs for investment parameters
+- 📈 Tabular display of yearly results with currency formatting
+- ⚡ Built using Angular 19's **signals** and **standalone components**
+- 📱 Responsive and clean layout with plain CSS
+
+---
+
+## 🧠 Tech Stack
+
+| Technology | Version      | Purpose                      |
+|------------|--------------|------------------------------|
+| Angular    | 19.1.3       | Frontend framework           |
+| TypeScript | ~5.7.2       | Type-safe JavaScript         |
+| CSS        | Native       | Styling                      |
+
+---
+
+## 🗂️ Project Structure
+
+```
+public/
+├── favicon.ico
+└── investment-calculator-logo.png
+src/
+├── app/
+│   ├── core/
+│   │   └── services/
+│   │       └── investment-calculator.service.ts
+│   ├── features/
+│   │   ├── results/
+│   │   │   ├── results.component.\*
+│   │   │   └── table-row\.model.ts
+│   │   └── user-input/
+│   │       ├── user-input.component.\*
+│   │       └── input-data.model.ts
+│   └── shared/components/header/
+│       └── header.component.\*
+│   ├── app.component.\*
+│   ├── app.config.ts
+│   ├── app.routes.ts
+├── main.ts
+├── index.html
+└── styles.css
+```
+
+---
+
+## 🧮 How It Works
+
+- The user fills out an input form with:
+  - Initial investment amount
+  - Annual contribution
+  - Expected return rate (in %)
+  - Investment duration (in years)
+
+- When the form is submitted:
+  - The `InvestmentCalculatorService` processes the data
+  - Each year's result is computed and pushed into an array
+  - The results are passed to the `ResultsComponent` and displayed in a formatted table
+
+---
+
+## 📷 Screenshots
+
+![App Input Form](app-form-preview.png)
+
+![Investment Calculation Results](app-results-preview.png)
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- Angular CLI
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/dihcoder/investment-calculator.git
+
+# Navigate to the project folder
+cd investment-calculator
+
+# Install dependencies
+npm install
+
+# Run the development server
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Visit `http://localhost:4200/` to start using the app.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📚 Learnings & Highlights
 
-```bash
-ng generate component component-name
-```
+* Practiced building **modular architecture** with `core`, `features`, and `shared` folders
+* Used **Angular standalone components** to reduce boilerplate
+* Implemented **Angular Signals API** for reactive state management
+* Utilized **typed models** for clean data handling
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 📦 Future Improvements
 
-## Building
+* Add charts (e.g. bar/line) to visualize investment growth
+* Improve mobile responsiveness and UI
+* Enable currency switch (USD, EUR, BRL, etc.)
+* Add validation and better error handling
+* Support light/dark mode
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 👨‍💻 Author
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Made with ❤️ by **Diego**
 
-## Running unit tests
+> *Student & aspiring Full Stack Developer*
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square\&logo=linkedin)](https://linkedin.com/in/dihcoder)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-black?style=flat-square\&logo=firefox-browser)](https://dihcoder.github.io/personal-website/)
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 📄 License
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
