@@ -15,13 +15,13 @@ import type { TableRow } from './features/results/table-row.model';
 })
 export class AppComponent {
   // calculationResults?: TableRow[];
-  calculationResults = signal<TableRow[]|undefined>(undefined);
+  // calculationResults = signal<TableRow[]|undefined>(undefined);
 
-  constructor(private investmentCalculatorService: InvestmentCalculatorService) {
-  }
+  // constructor(private investmentCalculatorService: InvestmentCalculatorService) {
+  // }
 
-  calculateInvestment(inputData: InputData) {
-    const calcResults: any[] = this.investmentCalculatorService.calculateInvestment(inputData);
-    this.calculationResults.set(calcResults)
-  }
+  // calculateInvestment(inputData: InputData) {
+  //   const calcResults: any[] = this.investmentCalculatorService.calculateInvestment(inputData);
+  //   this.calculationResults.set(calcResults)
+  // }
 }

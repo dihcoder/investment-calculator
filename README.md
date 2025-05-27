@@ -74,8 +74,8 @@ src/
 
 - When the form is submitted:
   - The `InvestmentCalculatorService` processes the data
-  - Each year's result is computed and pushed into an array
-  - The results are passed to the `ResultsComponent` and displayed in a formatted table
+  - The result for each year is calculated and inserted into an array
+  - The results are retrieved by the `ResultsComponent` and displayed in a formatted table
 
 ---
 
